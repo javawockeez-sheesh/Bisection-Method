@@ -105,10 +105,10 @@ class BisectionMethod:
         
         f_root = FunctionEvaluator.safe_eval(self.function_str, self.root)
         
-        summary = f"Root found at x = {self.root:.1f}\n"
-        summary += f"f(root) = {f_root:.1f}\n"
+        summary = f"Root found at x = {self.root:.4f}\n"
+        summary += f"f(root) = {f_root:.4f}\n"
         summary += f"Iterations: {self.iterations}\n"
-        summary += f"Final error: {self.final_error:.1f}"
+        summary += f"Final error: {self.final_error:.4f}"
         
         return summary
     
